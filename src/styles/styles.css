@@ -1,0 +1,152 @@
+body {
+    background-color: #a17db7;
+}
+
+
+section {
+    height: 100vh;
+}
+.row-10p{
+    height: 10%;
+}
+.row-20p {
+    height: 20%;
+}
+
+.row-60p {
+    height: 60%;
+}
+
+.title-col {
+    display: -webkit-box!important;
+}
+
+.pokemon-pic {
+    margin: auto;
+    display: block;
+    position: relative;
+    left: 10%;
+    bottom: 5%;
+}
+
+
+@supports (-webkit-text-stroke: 5px rgb(59,88,173)) {
+    .poke-name, .feed-button {
+        text-align: center;
+        font-family: 'Pokemon-Solid';
+        color:#FFCC00;
+        font-size: 7em;
+        -webkit-text-stroke: 5px rgb(59,88,173);
+    }
+
+    h1, .selection-div {
+        text-align: center;
+        font-family: 'Pokemon-Hollow';
+        font-size: 2.5em;
+        -webkit-text-stroke: 1.5px #FFCC00;
+        margin-top: 0.8em;
+
+    }
+}
+
+.peckish, .feedme, .starving {
+    position: relative;
+    left: 60%;
+    top: 10%;
+    display: none;
+}
+
+.feedme {
+    left: 100%;
+}
+
+.starving {
+    left: 80%;
+}
+
+.feed-button {
+    font-size: 3em;
+    background-color: rgb(209, 20, 20);
+    width: 50%;
+    display: block;
+    margin: auto;
+    border-radius: 10%;
+    box-shadow: 2px 2px #FFCC00;
+}
+
+.feed-button:hover {
+    background-color: rgb(216, 117, 117);
+}
+
+
+
+.root {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.poke-pic {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#user-pokemon {
+    background-image: url('/src/img/dmitriy-novikov-1.jpeg');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.selection-div {
+    overflow-x: auto;
+    display:inline-grid;
+    margin-bottom: 5px;
+    border-radius: 5%;
+    background: lightgray; 
+    width: 120px;
+    height: 130px;
+    margin: 15px; 
+    justify-content : center;
+    align-items: center;  
+    float:none;
+    font-size: 1em;
+    -webkit-text-stroke: 1.5px rgb(59,88,173);
+
+
+
+}
+
+.selection-div > .selection-button {
+    background-image: url("");   
+
+}
+
+.heart {
+    height: 11vh;
+    width: 7vw; 
+    display:inline-flex ;
+    float: right;
+}
+
+.heart:nth-child(1) {
+    margin-right: 10%;
+}
+
+.back-button {
+    height: 7vw;
+    width: 7vw; 
+    padding: 10px;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'Pokemon-Hollow';
+    src: url("/src/font/Pokemon\ Hollow.ttf");
+}
+
+@font-face {
+    font-family: 'Pokemon-Solid';
+    src: url("/src/font/Pokemon\ Solid.ttf");
+}
